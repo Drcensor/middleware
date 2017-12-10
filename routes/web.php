@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('role',[
+'middleware' => 'Role:creater',
+'uses' => 'TestController@index',
+]);
+
+
+Route::get('/age', function () {
+    return view('age');
+});
