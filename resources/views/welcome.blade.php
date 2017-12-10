@@ -82,9 +82,24 @@
                    MiddleWare Test
                 </div>
 
-                <div class="links">
-                  <?php echo 'something goes here'; ?>
-                </div>
+                <div id="form1">
+                                        
+                                        <h3>Please fill in the Form</h3>
+
+                                        
+
+
+                        <form method="post" action="age ">
+
+                                {{csrf_field()}}
+
+
+                                    <label>What is your Age &#58;<input class="bigger" type="text" name="age" value="" ;"/><br /><br />
+                                    <button type="submit" class="btn btn-primary">
+                                                   Send
+                                                </button>
+                        </form>
+            </div>
             </div>
         </div>
     </body>

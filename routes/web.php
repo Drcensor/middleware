@@ -22,6 +22,9 @@ Route::get('role',[
 ]);
 
 
-Route::get('/age', function () {
-    return view('age');
-});
+// Route::get('/age', function () {
+//     return view('age');
+// });
+
+Route::post('age','TestController@age');
+

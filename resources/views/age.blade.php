@@ -81,12 +81,8 @@
                 <div class="title m-b-md">
                   So what Age Are You
                 </div>
-
-                <div class="links">
-                  <?php echo 'something goes here'; ?>
-                </div>
-            </div>
-        </div>
+               You are {{ $ages }}  years old and I know this using Middleware!!
+       		</div>
     </body>
 </html>
 
