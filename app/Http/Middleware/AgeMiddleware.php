@@ -16,19 +16,13 @@ class AgeMiddleware
     public function handle($request, Closure $next)
     {
 
-
-
         if ($request->age < 18) {
             return redirect('/');
         }
 
-
-       return  $next($request);
-
-        
+       return  $next($request);        
     }
 }
 
 
 
-//$request, Closure $next

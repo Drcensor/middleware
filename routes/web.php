@@ -21,10 +21,5 @@ Route::get('role',[
 'uses' => 'TestController@index',
 ]);
 
-
-// Route::get('/age', function () {
-//     return view('age');
-// });
-
-Route::post('age','TestController@age');
+Route::post('age','AgeTestController@age');
 

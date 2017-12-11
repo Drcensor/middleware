@@ -11,12 +11,7 @@ class TestController extends Controller
 {
 
 
-	public function __construct(){
-
-		//$this->middleware('age');
-		//$this->middleware('Role');
-
-	}
+	
 
 
 
@@ -29,12 +24,7 @@ class TestController extends Controller
 
 
 
-	 public function age(Request $request){
-
-	 	$ages = $request->input('age');
-
-		return view('age', ['ages' => $ages]);
-	}
+	
 }
 
 
