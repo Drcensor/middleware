@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class AgeMiddleware
+class BirthMiddleware
 {
     /**
      * Handle an incoming request.
@@ -16,13 +16,11 @@ class AgeMiddleware
     public function handle($request, Closure $next)
     {
 
-        if ($request->age < 18) {
-            return redirect('/');
-        }
+         $birth='31st of March 1964';
 
-       return  $next($request);        
+        echo "My birthday is: ".$birth;
+
+
+        return $next($request);
     }
 }
-
-
-
