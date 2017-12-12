@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class RoleMiddleware
+class BirthMiddleware
 {
     /**
      * Handle an incoming request.
@@ -13,13 +13,13 @@ class RoleMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-
-
     public function handle($request, Closure $next)
     {
-        $role='Creater';
 
-        echo "Role: ".$role;
+         $birth='31st of March 1964';
+
+        echo "My birthday is: ".$birth;
+
 
         return $next($request);
     }

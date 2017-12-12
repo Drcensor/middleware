@@ -16,10 +16,16 @@ Route::get('/', function () {
 });
 
 
-Route::get('role',[
-'middleware' => 'Role:creater',
-'uses' => 'TestController@index',
-]);
+// Route::get('role',[
+// 'middleware' => 'Role:creater',
+// 'uses' => 'TestController@index',
+// ]);
+
+
+Route::get('role','TestController@index');
+
 
 Route::post('age','AgeTestController@age');
+
+Route::get('birth','BirthController@index');
 

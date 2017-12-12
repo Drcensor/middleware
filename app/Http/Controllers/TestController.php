@@ -10,20 +10,19 @@ use App\Http\Controllers\Controller;
 class TestController extends Controller
 {
 
+    public function __construct(){
+
+        $this->middleware('Role');
+        
+    }
 
 	
-
-
-
     public function index(){
-
+			
 		echo "<br>Test Controller.";
 
 		return view('role');
 	}
-
-
-
 	
 }
 
